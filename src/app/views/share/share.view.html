@@ -1,0 +1,16 @@
+<div class="container">
+    <!-- The Souvenir - Use HTML2Canvas to create image souvenir -->
+    <div class="card" *ngIf="!souvenir">
+        <img class="image" [src]="image" *ngFor="let image of images" />
+        <h3 class="text">Jean and Gerry's 60th Wedding Anniversary</h3>
+    </div>
+
+    <!-- Form: souvenir with nav buttons -->
+    <div class="share" *ngIf="souvenir">
+        <img class="souvenir" [src]="souvenir" />
+        <div class="form">
+            <button type="button" class="button secondary" (click)="tryAgain()">Try Again</button>
+            <button type="button" class="button" (click)="save()">Save</button>
+        </div>
+    </div>
+</div>

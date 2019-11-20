@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'Holtzschue';
+    src: url("assets/fonts/Holtzschue.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PatrickHand';
+    src: url("assets/fonts/PatrickHandSC-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GreatVibes';
+    src: url("assets/fonts/GreatVibes-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+html,
+button,
+input,
+select,
+textarea {
+    font-family: 'PatrickHand', sans-serif;
+    font-size: 1rem;
+    color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+p, span {
+    margin: 0;
+}
+
+.headline {
+    font-family: 'Holtzschue';
+    font-size: 6rem;
+}
+
+.title {
+    font-size: 3.5rem;
+}
+
+.subtitle {
+    font-size: 2.5rem;
+}
+
+.text {
+    font-size: 3rem;
+}

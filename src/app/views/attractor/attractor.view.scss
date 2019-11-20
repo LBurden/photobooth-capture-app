@@ -1,0 +1,45 @@
+@keyframes skewRotate {
+    0% {
+        transform: skewX(0);
+    }
+    25% {
+        transform: skewX(5deg);
+    }
+    75% {
+        transform: skewX(-5deg);
+    }
+    100% {
+        transform: skewX(0);
+    }
+}
+
+@keyframes leftToRightSlide {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.headline {
+    animation: skewRotate 2s linear infinite;
+    margin-bottom: 6rem;
+    text-shadow: #888 0.25rem 0.25rem 2rem;
+}
+
+.title {
+    overflow: hidden;
+    padding: 1rem 3rem;
+    position: relative;
+    &:after {
+        animation: leftToRightSlide 3s linear infinite;
+        background-color: #fff;
+        bottom: 0;
+        content: '';
+        height: 2px;
+        left: 0;
+        position: absolute;
+        width: 100%;
+    }
+}

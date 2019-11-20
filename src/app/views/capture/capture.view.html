@@ -1,0 +1,14 @@
+<div class="container">
+    <video #webcam class="video" autoplay loop [ngClass]="{'flash': flash}"></video>
+
+    <!-- Central Display - User interaction to start countdown - then countdown shown -->
+    <div class="ring" [ngStyle]="{'background-color': 'rgba(0,0,0,' + (count ? count * 0.25 : 0.85) + ')'}">
+        <h3 *ngIf="count" class="count">{{ count }}</h3>
+        <img *ngIf="!count" class="capture" src="assets/images/capture.png" (click)="startCountdown()" />
+    </div>
+
+    <!-- Shows the currently captured images -->
+    <div class="captured">
+        <img class="image" *ngFor="let image of images" [src]="image" />
+    </div>
+</div>

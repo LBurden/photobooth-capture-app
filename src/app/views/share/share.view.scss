@@ -1,0 +1,49 @@
+.card {
+    background-color: #000;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.625rem;
+    position: relative;
+    width: 62.5rem;
+
+    .image {
+        display: block;
+        padding: 0.5rem 0.5rem;
+        width: 50%;
+    }
+
+    .text {
+        background-color: #000;
+        border: 0.1875rem solid #d4af37;
+        border-radius: 0.625rem;
+        color: #fff;
+        font-family: 'GreatVibes';
+        font-size: 3.125rem;
+        height: 10rem;
+        left: calc(50% - 15.625rem);
+        line-height: 5rem;
+        padding: 0 1.25rem;
+        position: absolute;
+        text-align: center;
+        top: calc(50% - 5rem);
+        width: 31.25rem;
+    }
+}
+
+.share {
+    align-items: center;
+    display: flex;
+    width: 80%;
+    .souvenir {
+        object-fit: contain;
+        object-position: center;
+        width: 60%;
+    }
+    .form {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        padding: 0 2rem;
+        width: 40%;
+    }
+}

@@ -1,0 +1,20 @@
+.button {
+    background-color: #8a4096;
+    border: none;
+    border-radius: 0.5rem;
+    color: #fff;
+    font-size: 2.75rem;
+    margin: 2rem 0;
+    outline: none;
+    padding: 2rem 0;
+    transition: transform 0.25s ease;
+    width: 25rem;
+    
+    &.secondary {
+        background-color: #987b9d;
+    }
+
+    &:active {
+        transform: scale(0.9);
+    }
+}
