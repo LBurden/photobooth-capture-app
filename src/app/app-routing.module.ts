@@ -6,9 +6,17 @@ import { Routes, RouterModule } from '@angular/router';
 import { AttractorView } from './views/attractor/attractor.view';
 import { CaptureView } from './views/capture/capture.view';
 import { ErrorView } from './views/error/error.view';
+import { SettingsView } from './views/settings/settings.view';
 import { ShareView } from './views/share/share.view';
 
 const routes: Routes = [
+    {
+        'path': 'settings',
+        'component': SettingsView,
+        'data': {
+            'animation': 'Settings'
+        }
+    },
     {
         'path': '',
         'component': AttractorView,

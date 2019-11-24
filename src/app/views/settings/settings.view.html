@@ -1,0 +1,12 @@
+<div class="container">
+    <h1 class="title">Setup</h1>
+
+    <form class="form" (ngSubmit)="save()" #setup="ngForm">
+        <div class="element">
+            <label class="label">Node Server Location</label>
+            <input class="input" type="text" [(ngModel)]="settings.node" name="node" placeholder="http://localhost:9000" required />
+        </div>
+
+        <button class="button" type="submit" [disabled]="setup.invalid">Submit</button>
+    </form>
+</div>

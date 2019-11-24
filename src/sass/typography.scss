@@ -21,12 +21,15 @@
 
 html,
 button,
-input,
-select,
-textarea {
+select {
     font-family: 'PatrickHand', sans-serif;
     font-size: 1rem;
     color: #fff;
+}
+
+input,
+textarea {
+    font-family: 'Arial', sans-serif;
 }
 
 h1,

@@ -13,6 +13,7 @@ import { AppView } from './views/app/app.view';
 import { AttractorView } from './views/attractor/attractor.view';
 import { CaptureView } from './views/capture/capture.view';
 import { ErrorView } from './views/error/error.view';
+import { SettingsView } from './views/settings/settings.view';
 import { ShareView } from './views/share/share.view';
 
 // Components
@@ -24,6 +25,7 @@ import { TimeoutComponent } from './components/timeout/timeout.component';
         AttractorView,
         CaptureView,
         ErrorView,
+        SettingsView,
         ShareView,
         TimeoutComponent
     ],

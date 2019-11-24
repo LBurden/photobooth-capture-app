@@ -34,9 +34,9 @@ export class ShareView implements OnInit, OnDestroy {
     save() {
         const requests = [];
         this.images.forEach( (image: any, index: number) => {
-            requests.push( this.localService.save({'image': image, 'file_type': `original_${index}`}) );
+            requests.push( this.localService.save({'image': image, 'file_name': `original_${index}`}) );
         });
-        requests.push(this.localService.save({'image': this.souvenir, 'file_type': 'souvenir'}));
+        requests.push(this.localService.save({'image': this.souvenir, 'file_name': 'souvenir'}));
 
         Promise.all(requests).then( () => {
             this.router.navigate(['']);

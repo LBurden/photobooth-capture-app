@@ -22,6 +22,6 @@ export class AppView implements OnInit {
 
     // Go to app route on start
     ngOnInit() {
-        this.router.navigate(['/']);
+        this.router.navigate(['settings']);
     }
 }
