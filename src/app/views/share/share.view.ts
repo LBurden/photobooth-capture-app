@@ -16,6 +16,8 @@ export class ShareView implements OnInit, OnDestroy {
     images = this.sessionService.images;
     // The souvenir card
     souvenir: any;
+    // Stop button being pressed multiple times
+    submitted = false;
     // Timer reference: shows the souvenir before giving form options
     timer: any;
 
@@ -32,6 +34,8 @@ export class ShareView implements OnInit, OnDestroy {
 
     // Saves the 4 original images and the souvenir to a local folder
     save() {
+        this.submitted = true;
+
         const requests = [];
         this.images.forEach( (image: any, index: number) => {
             requests.push( this.localService.save({'image': image, 'file_name': `original_${index}`}) );

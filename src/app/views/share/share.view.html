@@ -6,7 +6,7 @@
     </div>
 
     <!-- Form: souvenir with nav buttons -->
-    <div class="share" *ngIf="souvenir">
+    <div class="share" *ngIf="souvenir" [ngClass]="{'inactive': submitted}">
         <img class="souvenir" [src]="souvenir" />
         <div class="form">
             <button type="button" class="button secondary" (click)="tryAgain()">Try Again</button>
